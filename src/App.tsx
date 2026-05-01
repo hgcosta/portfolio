@@ -1,3 +1,4 @@
+import { ThemeProvider } from "@/contexts/ThemeContext"
 import { Navbar } from "@/components/Navbar"
 import { Hero } from "@/components/sections/Hero"
 import { About } from "@/components/sections/About"
@@ -8,17 +9,19 @@ import { Footer } from "@/components/Footer"
 
 function App() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="min-h-screen bg-background text-foreground">
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <Experience />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
   )
 }
 
