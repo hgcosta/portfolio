@@ -13,6 +13,12 @@ const categoryColors: Record<string, string> = {
     "bg-violet-500/10 text-violet-700 dark:text-violet-400 border-violet-200 dark:border-violet-800",
   Internacional:
     "bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800",
+}
+
+const categoryColorsFeatured: Record<string, string> = {
+  Sites: "bg-blue-600/80 text-white border-transparent backdrop-blur-sm",
+  "Lojas Virtuais": "bg-violet-600/80 text-white border-transparent backdrop-blur-sm",
+  Internacional: "bg-emerald-600/80 text-white border-transparent backdrop-blur-sm",
 };
 
 export function Projects() {
@@ -113,7 +119,7 @@ export function Projects() {
                       {project.title}
                     </h3>
                     <span
-                      className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-medium mt-1 ${categoryColors[project.category] ?? ""}`}
+                      className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-medium mt-1 ${categoryColorsFeatured[project.category] ?? ""}`}
                     >
                       {project.category}
                     </span>
