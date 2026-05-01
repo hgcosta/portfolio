@@ -106,7 +106,7 @@ export function Projects() {
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 bg-white/90 hover:bg-white text-foreground text-xs font-semibold px-3 py-1.5 rounded-full transition-colors shadow"
+                      className="inline-flex items-center gap-1.5 bg-white/90 hover:bg-white text-gray-900 text-xs font-semibold px-3 py-1.5 rounded-full transition-colors shadow"
                     >
                       <ExternalLink className="w-3.5 h-3.5" />
                       Ver site
@@ -159,7 +159,7 @@ export function Projects() {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 bg-white/90 hover:bg-white text-foreground text-xs font-semibold px-3 py-1.5 rounded-full transition-colors shadow"
+                    className="inline-flex items-center gap-1.5 bg-white/90 hover:bg-white text-gray-900 text-xs font-semibold px-3 py-1.5 rounded-full transition-colors shadow"
                   >
                     <ExternalLink className="w-3 h-3" />
                     Ver site
