@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ExternalLink, Briefcase, Star } from "lucide-react";
+import { ExternalLink, Star, Briefcase } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { projects } from "@/data/portfolio";
@@ -99,9 +99,6 @@ export function Projects() {
                     <span className="inline-flex items-center gap-1 bg-primary/90 text-primary-foreground text-xs font-semibold px-2.5 py-1 rounded-full">
                       <Star className="w-3 h-3 fill-current" /> Destaque
                     </span>
-                    <span className="inline-flex items-center gap-1 bg-black/50 backdrop-blur-sm text-white text-xs font-medium px-2.5 py-1 rounded-full">
-                      <Briefcase className="w-3 h-3" /> Freelancer
-                    </span>
                   </div>
                   <div className="absolute bottom-3 right-3">
                     <a
@@ -156,11 +153,6 @@ export function Projects() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute top-2.5 left-2.5">
-                  <span className="inline-flex items-center gap-1 bg-black/40 backdrop-blur-sm text-white text-xs px-2 py-0.5 rounded-full">
-                    <Briefcase className="w-2.5 h-2.5" /> Freelancer
-                  </span>
-                </div>
                 <div className="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
                   <a
                     href={project.demo}
