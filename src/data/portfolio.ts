@@ -73,7 +73,7 @@ export const experiences = [
     period: "Ago 2022 — Mai 2024",
     location: "Remoto",
     description:
-      "Participei ativamente no desenvolvimento e evolução das APIs responsáveis pelo funcionamento do BIA — Inteligência Artificial da Bradesco Seguros. Atuação voltada ao back-end com foco na criação e melhoria de funcionalidades que aumentaram a performance no processamento de dados e otimizaram o tempo de resposta das requisições.",
+      "Participei ativamente no desenvolvimento e evolução das APIs responsáveis pelo funcionamento do BIA Inteligência Artificial da Bradesco Seguros. Atuação voltada ao back-end com foco na criação e melhoria de funcionalidades que aumentaram a performance no processamento de dados e otimizaram o tempo de resposta das requisições.",
     achievements: [
       "Evoluí as APIs do BIA (IA da Bradesco Seguros) com Node.js e TypeScript, reduzindo tempo de resposta das requisições",
       "Colaborei na integração com o front-end em React, garantindo maior consistência e eficiência nas entregas",

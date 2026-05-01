@@ -72,8 +72,10 @@ export function Contact() {
             Vamos <span className="gradient-text">conversar</span>
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto">
-            Tem um projeto em mente ou quer trocar uma ideia? Me chama no
-            WhatsApp — respondo rápido.
+            Tem um projeto em mente ou quer trocar uma ideia?
+          </p>
+          <p className="text-muted-foreground max-w-lg mx-auto">
+            Fale comigo no WhatsApp respondo rápido.
           </p>
         </div>
 
