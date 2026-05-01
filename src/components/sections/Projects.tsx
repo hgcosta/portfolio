@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ExternalLink, Star, Briefcase } from "lucide-react";
+import { ExternalLink, Star } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { projects } from "@/data/portfolio";
@@ -13,12 +13,14 @@ const categoryColors: Record<string, string> = {
     "bg-violet-500/10 text-violet-700 dark:text-violet-400 border-violet-200 dark:border-violet-800",
   Internacional:
     "bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800",
-}
+};
 
 const categoryColorsFeatured: Record<string, string> = {
   Sites: "bg-blue-600/80 text-white border-transparent backdrop-blur-sm",
-  "Lojas Virtuais": "bg-violet-600/80 text-white border-transparent backdrop-blur-sm",
-  Internacional: "bg-emerald-600/80 text-white border-transparent backdrop-blur-sm",
+  "Lojas Virtuais":
+    "bg-violet-600/80 text-white border-transparent backdrop-blur-sm",
+  Internacional:
+    "bg-emerald-600/80 text-white border-transparent backdrop-blur-sm",
 };
 
 export function Projects() {
@@ -46,7 +48,6 @@ export function Projects() {
             Projetos <span className="gradient-text">realizados</span>
           </h2>
           <div className="flex items-center justify-center gap-2 text-muted-foreground max-w-xl mx-auto">
-            <Briefcase className="w-4 h-4 text-primary flex-shrink-0" />
             <p>
               Trabalhos desenvolvidos como{" "}
               <span className="font-semibold text-foreground">freelancer</span>{" "}
