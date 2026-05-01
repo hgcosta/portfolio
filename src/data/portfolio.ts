@@ -115,8 +115,7 @@ export const projects = [
     title: "NUE Superfícies",
     description:
       "Site institucional para empresa de revestimentos e superfícies, com apresentação de produtos, portfólio e formulário de contato.",
-    image:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=80",
+    image: "/projects/nue.png",
     tech: ["PHP", "HTML", "CSS", "SASS"],
     demo: "https://www.nuesuperficies.com.br/",
     featured: false,
@@ -127,8 +126,7 @@ export const projects = [
     title: "Splash Eco Park",
     description:
       "Site completo de parque aquático com sistema de venda de ingressos online e integração com ERP para gestão de capacidade e reservas.",
-    image:
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80",
+    image: "/projects/splash.png",
     tech: ["PHP", "HTML", "CSS", "SASS", "ERP"],
     demo: "https://splashecopark.com.br/",
     featured: true,
@@ -152,8 +150,7 @@ export const projects = [
     title: "UArtES",
     description:
       "Loja virtual de artesanato e produtos artísticos, com catálogo completo, carrinho e checkout integrado via Nuvemshop.",
-    image:
-      "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=80",
+    image: "/projects/uartes.png",
     tech: ["Nuvemshop", "HTML", "CSS", "JavaScript"],
     demo: "https://www.uartes.com.br/",
     featured: false,
@@ -164,8 +161,7 @@ export const projects = [
     title: "Loja Calla",
     description:
       "E-commerce de moda feminina com curadoria de produtos, filtros avançados e experiência de compra otimizada via Nuvemshop.",
-    image:
-      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80",
+    image: "/projects/calla.png",
     tech: ["Nuvemshop", "HTML", "CSS", "JavaScript"],
     demo: "https://www.lojacalla.com.br/",
     featured: false,
@@ -176,8 +172,7 @@ export const projects = [
     title: "Donne Jalecos",
     description:
       "Loja virtual especializada em uniformes e jalecos profissionais, com categorias por especialidade e personalização de peças.",
-    image:
-      "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&q=80",
+    image: "/projects/donne.png",
     tech: ["Nuvemshop", "HTML", "CSS", "JavaScript"],
     demo: "https://donnejalecos.com.br/",
     featured: false,
@@ -188,8 +183,7 @@ export const projects = [
     title: "Focinho e Cia",
     description:
       "Pet shop online com produtos para animais de estimação, seção de promoções e integração com meios de pagamento via Nuvemshop.",
-    image:
-      "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80",
+    image: "/projects/focinho-cia.png",
     tech: ["Nuvemshop", "HTML", "CSS", "JavaScript"],
     demo: "https://lojafocinhoecia.lojavirtualnuvem.com.br/",
     featured: false,
@@ -213,8 +207,7 @@ export const projects = [
     title: "Porto Smile",
     description:
       "Site para clínica odontológica em Portugal, com apresentação de serviços, equipe, agendamento online e conteúdo em português europeu.",
-    image:
-      "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80",
+    image: "/projects/porto-smile.png",
     tech: ["PHP", "HTML", "CSS", "SASS"],
     demo: "https://portosmile.pt/",
     featured: true,
@@ -225,8 +218,7 @@ export const projects = [
     title: "Expedition Boats",
     description:
       "Site para empresa de embarcações de expedição, com catálogo de barcos, especificações técnicas e geração de leads internacionais.",
-    image:
-      "https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?w=600&q=80",
+    image: "/projects/Expedition-Boats.png",
     tech: ["PHP", "HTML", "CSS", "SASS"],
     demo: "https://expedition-boats.com/",
     featured: false,
