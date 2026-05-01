@@ -1,73 +1,73 @@
-# React + TypeScript + Vite
+# Hugo Costa — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfólio pessoal de Hugo Costa, Desenvolvedor Web Back-end com foco em Java/Spring Boot, Angular e TypeScript. Construído com React 19, Vite e Tailwind CSS.
 
-Currently, two official plugins are available:
+## Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+| Categoria | Libs |
+|-----------|------|
+| Framework | React 19 + TypeScript |
+| Build | Vite 8 |
+| Estilo | Tailwind CSS v3 + CSS custom properties |
+| Componentes | Radix UI (slot, separator, dialog, tooltip…) |
+| Ícones | lucide-react + SVGs inline (GitHub, LinkedIn) |
+| Utilitários | clsx · tailwind-merge · class-variance-authority |
 
-## React Compiler
+## Estrutura
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── components/
+│   ├── icons/          # SVGs inline para ícones de marca
+│   ├── sections/       # Hero · About · Experience · Projects · Contact
+│   ├── ui/             # Componentes ShadCN escritos manualmente (Button, Badge, Card…)
+│   ├── Footer.tsx
+│   ├── Navbar.tsx
+│   └── TechAvatar.tsx  # Editor de código animado (typing effect)
+├── contexts/
+│   └── ThemeContext.tsx # Dark / light com persistência em localStorage
+├── data/
+│   └── portfolio.ts    # Fonte única de dados: info pessoal, experiências, projetos, stats
+└── index.css           # Variáveis CSS de tema (light + dark)
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Funcionalidades
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Tema dark/light** — detecta preferência do sistema, persiste no localStorage
+- **Navbar com scroll-spy** — destaca a seção ativa via IntersectionObserver
+- **TechAvatar animado** — simula um editor de código com efeito de digitação linha a linha
+- **Filtro de projetos** — categorias: Todos · Sites · Lojas Virtuais · Internacional
+- **Layout responsivo** — mobile-first com breakpoints md/lg
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Como rodar
+
+```bash
+npm install
+npm run dev
 ```
+
+Acesse `http://localhost:5173`.
+
+## Build para produção
+
+```bash
+npm run build
+npm run preview
+```
+
+## Configuração de conteúdo
+
+Todo o conteúdo do portfólio está centralizado em [src/data/portfolio.ts](src/data/portfolio.ts):
+
+- `personalInfo` — nome, cargo, bio, localização, links
+- `experiences` — histórico profissional
+- `projects` — projetos com imagem em `public/projects/`
+- `skills` — tecnologias por categoria
+- `stats` — números de destaque na Hero
+
+## Contato
+
+- Email: hugocosta.oli@gmail.com
+- LinkedIn: [hugo-costa-68549b327](https://www.linkedin.com/in/hugo-costa-68549b327/)
+- GitHub: [hgcosta](https://github.com/hgcosta)
+- WhatsApp: [+55 81 99711-5664](https://wa.me/5581997115664)
