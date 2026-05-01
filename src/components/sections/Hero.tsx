@@ -2,6 +2,7 @@ import { Mail, MapPin, ArrowDown, Code2 } from "lucide-react"
 import { GithubIcon, LinkedinIcon } from "@/components/icons/BrandIcons"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { TechAvatar } from "@/components/TechAvatar"
 import { personalInfo, stats } from "@/data/portfolio"
 
 export function Hero() {
@@ -76,16 +77,10 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Right content - Avatar */}
+        {/* Right content - Tech Avatar */}
         <div className="flex-shrink-0 animate-fade-in">
           <div className="relative">
-            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl shadow-primary/10 ring-8 ring-background">
-              <img
-                src={personalInfo.avatar}
-                alt={personalInfo.name}
-                className="w-full h-full object-cover"
-              />
-            </div>
+            <TechAvatar />
             {/* Floating badges */}
             <div className="absolute -bottom-4 -left-4 glass-card border border-border rounded-xl px-4 py-2 shadow-lg">
               <p className="text-xs text-muted-foreground">Stack principal</p>
